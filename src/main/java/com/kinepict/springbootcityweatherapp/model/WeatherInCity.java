@@ -1,13 +1,55 @@
 package com.kinepict.springbootcityweatherapp.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
 
 
 public class WeatherInCity {
-    @JsonProperty("temp")
-    private Object degree;
 
-    public Object getDegree() {
-        return degree;
+    private String message;
+    private String cod;
+    private String count;
+    private List<Object> list;
+    private String temp;
+
+
+    public String getTemp() {
+        return temp;
+    }
+
+    public void setTemp(String temp) {
+        this.temp = temp;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getCod() {
+        return cod;
+    }
+
+    public void setCod(String cod) {
+        this.cod = cod;
+    }
+
+    public String getCount() {
+        return count;
+    }
+
+    public void setCount(String count) {
+        this.count = count;
+    }
+
+
+    public List<Object> getList() {
+        return list;
+    }
+
+    public void setList(List<Object> list) {
+        this.list = list;
     }
 }
